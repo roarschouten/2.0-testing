@@ -1,0 +1,135 @@
+.filterNav {
+  background-color: transparent;
+  border-bottom: 1px solid #efefef;
+
+  @media (min-width: 992px) {
+    background-color: transparant;
+  }
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  &__inner {
+    padding: 15px 0 16px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (min-width: 992px) {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__nav {
+    position: relative;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 995;
+    height: 0;
+
+    @media (min-width: 992px) {
+      top: 0;
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      background-color: transparent;
+      display: block;
+      width: auto;
+      height: auto;
+    }
+
+    ul {
+      margin: 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+      }
+    }
+
+    ul li {
+      display: inline-block;
+      margin: 8px 0;
+
+      &:last-child {
+        margin: 8px 0 0 0;
+      }
+
+      @media (min-width: 992px) {
+        display: block;
+        margin: 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    ul li a {
+      display: inline-block;
+      margin-right: 0;
+      color: $color-black;
+      font-family: $body-font;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: normal;
+      text-decoration: none;
+      transition: 0.1s ease-in-out;
+      border-bottom: 1px solid transparent;
+
+      @media (min-width: 992px) {
+        margin: 24px 0 23px 0;
+        margin-right: 22px;
+      }
+
+      &:hover {
+        border-bottom: 1px solid $color-black;
+      }
+    }
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
+
+  &__toggle {
+    display: inline-block;
+    width: 85px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url("filter_icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: transform 0.25s ease-out 0s, opacity 0.215s ease-in-out 0s;
+    z-index: 995;
+    transform: scale(0.85);
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__toggle--close {
+    width: 85px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url("filter_icon-close.svg");
+    opacity: 1;
+    transition: transform 0.25s ease-out 0s, opacity 0.215s ease-in-out 0s;
+    z-index: 995;
+  }
+}

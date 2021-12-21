@@ -1,0 +1,122 @@
+.googleReview {
+  padding: 60px 0 0 0;
+
+  @media (min-width: 992px) {
+    padding: 110px 0 30px 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    display: block;
+    width: 100%;
+    background: transparent;
+    transform: translate3d(0, 0, 0);
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    background: $color-beige;
+    height: 100%;
+    display: block;
+    position: relative;
+    min-height: 350px;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 2px;
+
+    @media (min-width: 992px) {
+      height: 350px;
+    }
+
+    //   &:before {
+    //     content: "";
+    //     top: 0;
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    //     z-index: 9;
+    //     background: linear-gradient(
+    //       to top,
+    //       rgba(35, 35, 37, 0.45) 0%,
+    //       rgba(35, 35, 37, 0.25) 35%,
+    //       rgba(22, 22, 23, 0) 60%,
+    //       rgba(0, 0, 0, 0) 100%
+    //     );
+    //     opacity: 1;
+    //     border-radius: 0 0 2px 2px;
+    //   }
+
+    &__content {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      padding: 0 30px;
+      width: 100%;
+      z-index: 50;
+      box-sizing: border-box;
+
+      @media (min-width: 992px) {
+        top: 40px;
+        padding: 0 40px;
+      }
+
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      &--rating {
+        height: 22px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__bottom {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      padding: 0 30px;
+      width: 100%;
+      z-index: 50;
+      box-sizing: border-box;
+      display: flex;
+
+      @media (min-width: 992px) {
+        bottom: 40px;
+        padding: 0 40px;
+      }
+
+      &--icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin-right: 15px;
+        box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.09);
+      }
+
+      &--afz {
+        p {
+          font-family: $main-font;
+        }
+
+        span {
+          font-family: $body-font;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.pagination {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__overview {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  li {
+    display: inline;
+    margin: 0 5px;
+  }
+
+  &__button {
+    position: relative;
+    width: 100%;
+    z-index: 50;
+    box-sizing: border-box;
+
+    &.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    & .blog-link {
+      border: 1px solid #473d3b;
+      display: inline-block;
+      padding: 8px 18px 8px 18px;
+      border-radius: 5px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}

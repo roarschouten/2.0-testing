@@ -1,0 +1,15 @@
+.blogPage {
+  padding: 50px 0 50px 0;
+
+  @media (min-width: 992px) {
+    padding: 80px 0 120px 0;
+  }
+}
+
+.blogFeatured {
+  padding: 0 0 50px 0;
+
+  @media (min-width: 992px) {
+    padding: 0 0 120px 0;
+  }
+}

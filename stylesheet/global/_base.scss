@@ -1,0 +1,46 @@
+html,
+body {
+  // margin: 0;
+  // padding: 0;
+  // background: #ffffff;
+
+  background: purple;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+
+  h1{
+    font-size: 9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-red;
+  font-family: $body-font;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}

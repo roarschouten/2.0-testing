@@ -1,0 +1,21 @@
+.searchPage {
+  padding: 60px 0;
+
+  @media (min-width: 992px) {
+    padding: 100px 0;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__result {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__noresults {
+    text-align: center;
+  }
+}

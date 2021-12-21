@@ -1,0 +1,12 @@
+.relatedProducts {
+  padding: 60px 0;
+
+  @media (min-width: 992px) {
+    padding: 110px 0 85px 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}

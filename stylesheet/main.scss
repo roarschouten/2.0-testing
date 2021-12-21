@@ -1,0 +1,44 @@
+//global
+@import "global/reset";
+@import "global/grid";
+@import "global/variables";
+@import "global/font-face";
+@import "global/mixins";
+@import "global/base";
+@import "global/typo";
+@import "global/utils";
+@import "global/buttons";
+@import "global/animation";
+
+// Layout
+@import "layout/header";
+@import "layout/menu";
+@import "layout/footer";
+
+// Snippets
+@import "snippets/searchBar";
+@import "snippets/searchPage";
+@import "snippets/pagination";
+@import "snippets/price";
+@import "snippets/breadcrumbs";
+@import "snippets/product";
+@import "snippets/collection";
+@import "snippets/blogCard";
+@import "snippets/blogSections";
+@import "snippets/cartPage";
+@import "snippets/article";
+@import "snippets/filterTags";
+@import "snippets/filterNav";
+@import "snippets/faq";
+@import "snippets/contact";
+@import "snippets/form";
+@import "snippets/affiliate";
+@import "snippets/googleReview";
+
+// Product
+@import "product/productIntro";
+@import "product/productSlider";
+@import "product/cartButton";
+@import "product/productDescr";
+@import "product/productReview";
+@import "product/relatedProducts";

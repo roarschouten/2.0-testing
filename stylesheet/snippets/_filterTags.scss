@@ -1,0 +1,7 @@
+.filterTags {
+  li {
+    &.active a {
+      border-bottom: 1px solid $color-black;
+    }
+  }
+}

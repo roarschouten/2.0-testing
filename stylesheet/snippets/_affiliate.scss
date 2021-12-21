@@ -1,0 +1,113 @@
+.sa-pageContainer {
+  width: 100%;
+  max-width: 100% !important;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media (min-width: 576px) {
+    max-width: 540px !important;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px !important;
+  }
+
+  @media (min-width: 992px) {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 110px;
+    margin-bottom: 90px;
+    max-width: 960px !important;
+  }
+}
+
+.sa-mainContainer {
+  padding: 0 !important;
+}
+
+.sa-PageTitle {
+  margin-bottom: 15px;
+}
+
+.sa-subHeader {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem;
+}
+
+.sa-tableHeader {
+  font-family: $body-font;
+}
+
+// Tabel
+.sa-Row {
+  td {
+    line-height: 1.5;
+
+    strong {
+      font-weight: normal;
+    }
+  }
+}
+
+.sa-Polaris-DataTable__Cell {
+  font-family: $body-font;
+  font-weight: normal !important;
+  color: $color-black;
+
+  &--firstColumn {
+    padding: 0.9rem 0.9rem 0.9rem 0 !important;
+  }
+
+  &--total {
+    background: #f5f3ea !important;
+    border-bottom: 0.1rem solid #f0eee4 !important;
+    padding: 0.9rem !important;
+  }
+}
+
+// Start Modal
+.sa-modal-header-inner {
+  span {
+    font-family: $main-font !important;
+  }
+}
+
+a#sa-modal-close {
+  font-family: $body-font !important;
+  font-size: 20px;
+  color: $color-black;
+  background: $color-beige;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.sa-modalItem {
+  font-family: $body-font !important;
+}
+
+.sa-formInput,
+.sa-formLabel {
+  height: 50px;
+  width: 100%;
+  padding: 0 0 0 20px;
+  width: 375px;
+  border: 1px solid #ededed;
+  border-radius: 100px;
+}
+
+.sa-Polaris-Button {
+  span {
+    color: #ffffff !important;
+
+    &:hover {
+      color: $color-black !important;
+    }
+  }
+}
